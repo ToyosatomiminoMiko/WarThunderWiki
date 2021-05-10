@@ -11,10 +11,14 @@ import pandas as pd
 文件说明:
 
 header:
-    'Last-Modified'是获取的服务器反馈的页面更新时间,
-    'If-Modified-Since'是设置上次的'Last-Modified',
-    若'If-Modified-Since'和本次的'Last-Modified'相同,
+    'Last-Modified'是获取服务器反馈的页面更新时间,
+    'If-Modified-Since'被设置成上次的'Last-Modified',
+    若'If-Modified-Since'和'Last-Modified'相同,
     则返回的status_code为304,不相同为200.
+    
+因此,无需每一次提交请求,HTML源码在第一次请求时就会保存在本地,
+被同时保存下来的还有'Last-Modified',
+用作下一次提交请求时放进header的'If-Modified-Since'中,
 
 """
 
