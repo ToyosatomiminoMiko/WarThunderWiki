@@ -23,7 +23,7 @@ https://www.bilibili.com/read/cv11244388<br>
 
 
 
-更多信息:<br>
+开发者:<br>
 bilibili:<br>
 GALACTIC郝季仁|uid:430965590<br>
 https://space.bilibili.com/430965590/<br>
